@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CustomCX Chatbots</title>
+  <style>
+    /* Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    background: url('https://images.unsplash.com/photo-1504610926078-a1611febcad3?q=80&w=880&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') no-repeat center center fixed;
+    background-size: cover;
+      color: #fff;
+      line-height: 1.6;
+    }
+
+    header {
+      text-align: center;
+      padding: 3rem 1rem;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      opacity: 0.9;
+      margin-top: 5px;
+        
+    }
+
+    .hero {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 4rem 2rem;
+    }
+
+    .hero-content {
+      max-width: 600px;
+      text-align: center;
+      background: rgba(255, 255, 255, 0.1);
+      padding: 2rem;
+      border-radius: 16px;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+    }
+
+    .hero-content h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    .hero-content p {
+      margin-bottom: 2rem;
+    }
+
+    .cta-btn {
+      background: #fff;
+      color: #6b3fd4;
+      padding: 0.8rem 1.8rem;
+      border: none;
+      border-radius: 25px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      font-weight: bold;
+    }
+
+    .cta-btn:hover {
+      background: #ffcc00;
+      color: #333;
+      transform: translateY(-2px);
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem 1rem;
+      font-size: 0.9rem;
+      background: rgba(0, 0, 0, 0.2);
+      margin-top: 4rem;
+    }
+
+    footer a {
+      color: #ffcc00;
+      text-decoration: none;
+      font-weight: bold;
+    }
+.logo {
+  padding: 0.5em 1.5em;
+  background: radial-gradient(circle at 30% 40%, #ffb347 50%, #ff7f50 50%);
+  flex-direction: column;
+  display: inline-flex;
+  border-radius: 12px;
+  
+}
+
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo"><h1>🤖 CustomCX</h1></div>
+    <p>Building intelligent chatbots at an unbeatable price — hosting & support included.</p>
+  </header>
+
+  <section class="hero">
+    <div class="hero-content">
+      <h2>Try Our Chatbot Today</h2>
+      <p>
+        Engage your customers 24/7 with AI-driven chat experiences.  
+        Automate reservations, sales, FAQs, and more — all in one plan.
+      </p>
+      <button class="cta-btn">Try the site chat-widget</button>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 <a href="https://customcx.com">CustomCX</a>. All Rights Reserved. | <a href="https://wa.link/u1x3df">Contact Us</a></p>
+  </footer>
+
+ 
+  <!-- Widget Configuration -->
+<link href="https://cdn.jsdelivr.net/npm/@n8n/chat/dist/style.css" rel="stylesheet" />
+<script>
+    window.ChatWidgetConfig = {
+        webhook: {
+            url: 'https://agents.customcx.com/webhook/4091fa09-fb9a-4039-9411-7104d213f601/chat',
+            route: 'general'
+        },
+        branding: {
+            logo: 'https://images.unsplash.com/photo-1744116432674-e6ff2b6d9544?q=80&w=880&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+            name: 'CustomCX Agent',
+            welcomeText: 'Hi 👋, how can we help?',
+            responseTimeText: 'We typically respond right away',
+            
+        },
+        style: {
+            primaryColor: '#854fff',
+            secondaryColor: '#6b3fd4',
+            position: 'right', // 'left' or 'right'
+            backgroundColor: '#ffffff',
+            fontColor: '#333333',
+            
+
+        }
+        
+
+    };
+</script>
+
+
+<script src="https://cdn.jsdelivr.net/gh/shadrack-ago/n8n/widget2.js"></script>
+
+
+</body>
+</html>
